@@ -1,0 +1,312 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.mainContainer {
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cvContainer {
+  height: 150vh;
+  width: 70%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 0.5fr 0.8fr 1fr 1.5fr 1fr;
+  grid-template-areas:
+    "header header"
+    "contact projects"
+    "profile projects"
+    "skills projects"
+    "education experience ";
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.header {
+  background-color: black;
+  grid-area: header;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header h1 {
+  width: fit-content;
+  margin-left: 3rem;
+}
+
+.header p {
+  font-weight: 100;
+  width: fit-content;
+  margin-left: 3rem;
+  margin-top: -1rem;
+}
+
+.contact {
+  grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-weight: 900;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.contactText {
+  width: fit-content;
+  font-size: 0.9rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 90%;
+}
+
+.contactText a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.contactText a:hover {
+  color: gray;
+  transition: 0.5s;
+}
+
+.profile {
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profileText {
+  border-top: 1rem;
+  max-height: 80%;
+  max-width: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.skills {
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.skillsTitle {
+  margin-left: 1.5rem;
+  font-weight: 900;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.skillsText {
+  display: flex;
+  height: 80%;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  font-size: 0.7rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.left div {
+  margin-left: 1rem;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  font-size: 0.7rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.right div {
+  margin-left: 1rem;
+}
+
+.education {
+  grid-area: education;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.educationTitle {
+  font-weight: 900;
+  width: 80%;
+}
+
+.educationText {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.educationText div {
+  height: 45%;
+  width: 90%;
+}
+
+.school {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.program {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+
+.certificate {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+
+.projects {
+  grid-area: projects;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projectsTitle {
+  width: 90%;
+  font-weight: 900;
+}
+
+.projectsContainer {
+  height: 85%;
+  width: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.projectContainer {
+  width: 90%;
+  height: 22%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.ProjectsTitles {
+  width: 95%;
+  font-weight: 600;
+}
+
+.toolsText {
+  width: 95%;
+  font-size: 0.6rem;
+}
+
+.projectsLinks {
+  width: 95%;
+}
+
+.projectsLinks a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.projectsLinks a:hover {
+  color: gray;
+  transition: 0.5s;
+}
+
+.experience {
+  grid-area: experience;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.experienceTitle {
+  width: 90%;
+  font-weight: 900;
+}
+
+.experienceContainer {
+  height: 100%;
+  width: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp {
+  width: 95%;
+  height: 40%;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.exp div {
+  width: 90%;
+}
+
+.exp div:nth-child(1) {
+  font-weight: 600;
+}
+
+.exp div:nth-child(2) {
+  font-size: 0.8rem;
+}
+
+.exp div:nth-child(3) {
+  font-size: 0.8rem;
+}
+
+.exp div:nth-child(4) {
+  font-size: 0.8rem;
+}
+
+.exp div:nth-child(5) {
+  font-size: 0.8rem;
+}
