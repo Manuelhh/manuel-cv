@@ -317,9 +317,14 @@ body {
 }
 
 @media screen and (max-width: 869px) {
+  .mainContainer {
+    height: 300vh;
+  }
+
   .cvContainer {
+    height: 300vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.3fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "header"
       "contact"
@@ -333,26 +338,18 @@ body {
   .header h1 {
     margin-left: 1rem;
   }
-  .contact {
-    margin-bottom: 1rem;
-  }
 
   .profile {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-
-  .profileText {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .skills {
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
   .education {
-    margin-bottom: 1rem;
-    min-height: 17rem;
+    height: 20rem;
   }
 
   .projects {
