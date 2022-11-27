@@ -16,7 +16,7 @@ body {
   border: 1px solid black;
   display: grid;
   grid-template-columns: 0.6fr 1fr;
-  grid-template-rows: 0.5fr 0.8fr 1fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.8fr 0.7fr 1.5fr 1fr;
   grid-template-areas:
     "header header"
     "contact projects"
@@ -86,14 +86,14 @@ body {
   grid-area: profile;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .profileText {
-  border-top: 1rem;
-  max-height: 80%;
-  max-width: 90%;
+  margin-top: 1.5rem;
+  height: 80%;
+  width: 90%;
   overflow: hidden;
   overflow-y: scroll;
   font-size: 0.8rem;
@@ -109,10 +109,11 @@ body {
 }
 
 .skillsTitle {
-  margin-left: 1.5rem;
+  align-self: flex-end;
   font-weight: 900;
-  width: 80%;
-  margin-top: 1rem;
+  width: 95%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .skillsText {
@@ -156,6 +157,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .educationTitle {
@@ -336,7 +338,12 @@ body {
   }
 
   .profile {
-    margin-bottom: 1rem;
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .profileText {
+    margin-top: 1rem;
   }
 
   .skills {
@@ -345,6 +352,25 @@ body {
 
   .education {
     margin-bottom: 1rem;
-    min-height: 15rem;
+    min-height: 17rem;
+  }
+
+  .projects {
+    height: fit-content;
+  }
+
+  .projectContainer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience {
+    margin-top: 3rem;
+    height: fit-content;
+  }
+
+  .exp {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
