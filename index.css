@@ -59,7 +59,7 @@ body {
 
 .title {
   font-weight: 900;
-  width: 80%;
+  width: 90%;
   margin-top: 1rem;
 }
 
@@ -160,7 +160,8 @@ body {
 
 .educationTitle {
   font-weight: 900;
-  width: 80%;
+  width: 90%;
+  height: 20%;
 }
 
 .educationText {
@@ -176,23 +177,20 @@ body {
 
 .educationText div {
   height: 45%;
-  width: 90%;
+  width: 100%;
 }
 
 .school {
   font-size: 0.8rem;
-  margin-left: 0.5rem;
   font-weight: 600;
 }
 
 .program {
   font-size: 0.7rem;
-  margin-left: 0.5rem;
 }
 
 .certificate {
   font-size: 0.7rem;
-  margin-left: 0.5rem;
 }
 
 .projects {
@@ -217,7 +215,7 @@ body {
 
 .projectContainer {
   width: 90%;
-  height: 22%;
+  height: 25%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -230,6 +228,11 @@ body {
 .ProjectsTitles {
   width: 95%;
   font-weight: 600;
+}
+
+.projectDescription {
+  width: 95%;
+  font-size: 0.8rem;
 }
 
 .toolsText {
@@ -309,4 +312,39 @@ body {
 
 .exp div:nth-child(5) {
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 869px) {
+  .cvContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "contact"
+      "profile"
+      "skills"
+      "education"
+      "projects"
+      "experience";
+  }
+
+  .header h1 {
+    margin-left: 1rem;
+  }
+  .contact {
+    margin-bottom: 1rem;
+  }
+
+  .profile {
+    margin-bottom: 1rem;
+  }
+
+  .skills {
+    margin-bottom: 2rem;
+  }
+
+  .education {
+    margin-bottom: 1rem;
+    min-height: 15rem;
+  }
 }
