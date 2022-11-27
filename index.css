@@ -316,15 +316,15 @@ body {
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 869px) {
+@media screen and (max-width: 900px) {
   .mainContainer {
-    height: 300vh;
+    height: fit-content;
   }
 
   .cvContainer {
-    height: 300vh;
+    height: fit-content;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.3fr 0.5fr 0.5fr 1fr 0.5fr;
     grid-template-areas:
       "header"
       "contact"
@@ -341,15 +341,6 @@ body {
 
   .profile {
     margin-top: 2rem;
-  }
-
-  .skills {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .education {
-    height: 20rem;
   }
 
   .projects {
