@@ -215,6 +215,22 @@ body {
   overflow-y: scroll;
 }
 
+.projects ::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.projects ::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.projects ::-webkit-scrollbar-track {
+  background-color: gray;
+}
+
+.projectsContainer ::-webkit-scrollbar {
+  display: none;
+}
+
 .projectContainer {
   width: 90%;
   height: 25%;
@@ -265,6 +281,18 @@ body {
   justify-content: space-evenly;
 }
 
+.experience ::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.experience ::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.experience ::-webkit-scrollbar-track {
+  background-color: gray;
+}
+
 .experienceTitle {
   width: 90%;
   font-weight: 900;
@@ -288,8 +316,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  overflow-y: scroll;
+}
+
+.exp ::-webkit-scrollbar {
+  display: none;
 }
 
 .exp div {
@@ -347,6 +377,10 @@ body {
     height: fit-content;
   }
 
+  .projects ::-webkit-scrollbar {
+    display: none;
+  }
+
   .projectContainer {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -360,5 +394,9 @@ body {
   .exp {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .experience ::-webkit-scrollbar {
+    display: none;
   }
 }
